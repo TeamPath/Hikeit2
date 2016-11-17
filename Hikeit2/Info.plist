@@ -34,5 +34,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>HikeIt needs to use your location to track your hike.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>HikeIt needs to use your location to track your hike.</string>
 </dict>
 </plist>

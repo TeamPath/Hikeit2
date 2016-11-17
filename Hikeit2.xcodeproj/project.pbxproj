@@ -25,6 +25,7 @@
 		0A4F66211DDD02AD003DC5B7 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66201DDD02AD003DC5B7 /* Hike.swift */; };
 		0A4F66231DDD050B003DC5B7 /* HikesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66221DDD050B003DC5B7 /* HikesStore.swift */; };
 		0A4F66251DDD074B003DC5B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66241DDD074B003DC5B7 /* Constants.swift */; };
+		35AEFBB91DDDF69D00DE67EF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEFBB81DDDF69D00DE67EF /* MapViewController.swift */; };
 		D64778B104370CC6247EDEF1 /* Pods_Hikeit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB660A22BCD19A66F6B005A /* Pods_Hikeit2.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		0A4F66241DDD074B003DC5B7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0BB660A22BCD19A66F6B005A /* Pods_Hikeit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hikeit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		305182AF4BB3EBC45A2272FE /* Pods-Hikeit2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikeit2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hikeit2/Pods-Hikeit2.debug.xcconfig"; sourceTree = "<group>"; };
+		35AEFBB81DDDF69D00DE67EF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Cotrollers/MapViewController.swift"; sourceTree = "<group>"; };
 		6FF51C7D076583BE25CB2635 /* Pods-Hikeit2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikeit2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hikeit2/Pods-Hikeit2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		0A4F65F01DDCE9A2003DC5B7 /* Hikeit2 */ = {
 			isa = PBXGroup;
 			children = (
+				0A4F661D1DDCF3A7003DC5B7 /* Supporting Files */,
 				0A4F66261DDD0964003DC5B7 /* StoryBoards */,
 				0A4F66171DDCF18A003DC5B7 /* Cells */,
 				0A4F660E1DDCF04D003DC5B7 /* View Controllers */,
@@ -107,7 +110,6 @@
 				0A4F66051DDCED66003DC5B7 /* WebServices.swift */,
 				0A4F66071DDCED92003DC5B7 /* NetworkModel.swift */,
 				0A4F66091DDCEDF5003DC5B7 /* WebServicesExtension.swift */,
-				0A4F661D1DDCF3A7003DC5B7 /* Supporting Files */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -129,6 +131,7 @@
 				0A4F66111DDCF13A003DC5B7 /* WeatherViewController.swift */,
 				0A4F66131DDCF157003DC5B7 /* HikeDetailViewController.swift */,
 				0A4F66151DDCF17A003DC5B7 /* HikeTableViewController.swift */,
+				35AEFBB81DDDF69D00DE67EF /* MapViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				0A4F66121DDCF13A003DC5B7 /* WeatherViewController.swift in Sources */,
 				0A4F66061DDCED66003DC5B7 /* WebServices.swift in Sources */,
 				0A4F66141DDCF157003DC5B7 /* HikeDetailViewController.swift in Sources */,
+				35AEFBB91DDDF69D00DE67EF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
