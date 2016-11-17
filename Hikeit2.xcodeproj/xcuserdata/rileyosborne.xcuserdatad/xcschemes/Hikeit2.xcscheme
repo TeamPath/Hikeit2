@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B1714E816AE794962516E2ECBB40A5A"
-               BuildableName = "MBProgressHUD.framework"
-               BlueprintName = "MBProgressHUD"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "0A4F65ED1DDCE9A1003DC5B7"
+               BuildableName = "Hikeit2.app"
+               BlueprintName = "Hikeit2"
+               ReferencedContainer = "container:Hikeit2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0A4F65ED1DDCE9A1003DC5B7"
+            BuildableName = "Hikeit2.app"
+            BlueprintName = "Hikeit2"
+            ReferencedContainer = "container:Hikeit2.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B1714E816AE794962516E2ECBB40A5A"
-            BuildableName = "MBProgressHUD.framework"
-            BlueprintName = "MBProgressHUD"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "0A4F65ED1DDCE9A1003DC5B7"
+            BuildableName = "Hikeit2.app"
+            BlueprintName = "Hikeit2"
+            ReferencedContainer = "container:Hikeit2.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0A4F65ED1DDCE9A1003DC5B7"
+            BuildableName = "Hikeit2.app"
+            BlueprintName = "Hikeit2"
+            ReferencedContainer = "container:Hikeit2.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

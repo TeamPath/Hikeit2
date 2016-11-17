@@ -38,5 +38,9 @@
 	<string>HikeIt needs to use your location to track your hike.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>HikeIt needs to use your location to track your hike.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>HikeIt needs to use your camera to take a picture.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>HikeIt needs to acess your photo library to choose a picture.</string>
 </dict>
 </plist>

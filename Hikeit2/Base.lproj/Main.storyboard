@@ -93,25 +93,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UR3-cU-F14">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="UR3-cU-F14">
+                                <rect key="frame" x="0.0" y="64" width="320" height="412"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="B90-67-x3i">
+                                <rect key="frame" x="197" y="484" width="107" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz8-Jd-Z0P">
+                                <rect key="frame" x="16" y="484" width="79" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" backgroundImage="Camera"/>
+                                <connections>
+                                    <action selector="choosePhoto:" destination="szt-As-deH" eventType="touchUpInside" id="Tc4-8T-XgP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="xuv-py-nYw" firstAttribute="top" secondItem="UR3-cU-F14" secondAttribute="bottom" id="Syb-3W-ose"/>
-                            <constraint firstItem="UR3-cU-F14" firstAttribute="leading" secondItem="p11-g0-Pn7" secondAttribute="leading" id="aH1-DI-jYj"/>
-                            <constraint firstItem="UR3-cU-F14" firstAttribute="top" secondItem="bvh-Ad-P7V" secondAttribute="bottom" id="jRE-46-CgD"/>
-                            <constraint firstAttribute="trailing" secondItem="UR3-cU-F14" secondAttribute="trailing" id="lDJ-2s-zAz"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3uF-eM-732">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yTd-GY-uXd"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="B90-67-x3i" id="sGU-vR-pHO"/>
                         <outlet property="mapView" destination="UR3-cU-F14" id="i3f-qz-lBR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QR-yH-rku" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877.60000000000002" y="35.532233883058474"/>
+            <point key="canvasLocation" x="875.625" y="34.859154929577464"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="szt-hs-RI2">
+            <objects>
+                <viewController id="oRc-RI-67G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KYJ-QV-84G"/>
+                        <viewControllerLayoutGuide type="bottom" id="PCy-qg-dLE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YBf-je-LVR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IVx-Ke-Enr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8V-3q-UD8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2649.275362318841" y="35.869565217391305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dbp-ji-MVx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NYm-ci-TU7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o7w-NI-EfO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oRc-RI-67G" kind="relationship" relationship="rootViewController" id="i73-Vn-1nS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dq1-8n-HgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742.0289855072465" y="35.869565217391305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera" width="25" height="25"/>
+        <image name="Image" width="24" height="24"/>
+    </resources>
 </document>
