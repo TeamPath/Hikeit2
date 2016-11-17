@@ -22,6 +22,12 @@ class HikeDetailViewController: UIViewController {
     }
     
 
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
