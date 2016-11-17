@@ -80,11 +80,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         //calculation for location selection for pointing annoation
         if (previousLocation as CLLocation?) != nil{
             //case if previous location exists
-            if previousLocation.distance(from: newLocation) > 10 {
+            if previousLocation.distance(from: newLocation) > 50 {
                 addAnnotationsOnMap(newLocation)
                 previousLocation = newLocation
             }
-        }else{
+        } else{
             //case if previous location doesn't exists
             addAnnotationsOnMap(newLocation)
             previousLocation = newLocation
@@ -93,10 +93,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     // MARK :- MKMapView delegate
     func mapView(_ mapView: MKMapView!, rendererFor overlay: MKOverlay!) -> MKOverlayRenderer! {
-        
+         
         if (overlay is MKPolyline) {
             let pr = MKPolylineRenderer(overlay: overlay)
-            pr.strokeColor = UIColor(red:0.18, green:0.46, blue:0.09, alpha:1.0)
+            pr.strokeColor = UIColor.red
             pr.lineWidth = 3
             return pr
         }
