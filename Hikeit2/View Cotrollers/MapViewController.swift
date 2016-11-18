@@ -16,10 +16,18 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBOutlet weak var mapView: MKMapView!
     var locationManager: CLLocationManager!
     var previousLocation : CLLocation!
+    var gestureRecognizer: UITapGestureRecognizer!
+    
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "Green General Background.png")
+        self.view.insertSubview(backgroundImage, at: 0)
+        
         
         locationManager = CLLocationManager()
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -80,11 +88,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         //calculation for location selection for pointing annoation
         if (previousLocation as CLLocation?) != nil{
             //case if previous location exists
-            if previousLocation.distance(from: newLocation) > 10 {
+            if previousLocation.distance(from: newLocation) > 100 {
                 addAnnotationsOnMap(newLocation)
                 previousLocation = newLocation
             }
-        }else{
+        } else{
             //case if previous location doesn't exists
             addAnnotationsOnMap(newLocation)
             previousLocation = newLocation
@@ -93,10 +101,10 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     // MARK :- MKMapView delegate
     func mapView(_ mapView: MKMapView!, rendererFor overlay: MKOverlay!) -> MKOverlayRenderer! {
-        
+         
         if (overlay is MKPolyline) {
             let pr = MKPolylineRenderer(overlay: overlay)
-            pr.strokeColor = UIColor(red:0.18, green:0.46, blue:0.09, alpha:1.0)
+            pr.strokeColor = UIColor.red
             pr.lineWidth = 3
             return pr
         }
@@ -127,4 +135,90 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         })
     }
     
+    
+    fileprivate func showPicker (_ type: UIImagePickerControllerSourceType) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = type
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func addGestureRecognizer () {
+        gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewImage))
+        imageView.addGestureRecognizer(gestureRecognizer)
+    }
+
+    func viewImage () {
+        if let image = imageView.image {
+            //TodoStore.shared.selectedImage = image
+            let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImageNavController")
+            present(viewController, animated: true, completion: nil)
+        }
+    }
+
+    
+    
+    @IBAction func choosePhoto(_ sender: Any) {
+        let alert = UIAlertController(title: "Picture", message: "Choose a picture type", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action) in self.showPicker(.camera)
+        }))
+        alert.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action) in self.showPicker(.photoLibrary)
+        }))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
+    
 }
+
+extension MapViewController: UINavigationControllerDelegate,UIImagePickerControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        
+        if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
+            let maxSise: CGFloat = 512
+            let scale = maxSise / image.size.width
+            let newHeight = image.size.height * scale
+            
+            UIGraphicsBeginImageContext(CGSize(width: maxSise, height: newHeight))
+            image.draw(in: CGRect(x:0, y:0, width: maxSise, height: newHeight))
+            let resizedImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            imageView.image = resizedImage
+            
+            imageView.isHidden = false
+            if gestureRecognizer != nil {
+                imageView.removeGestureRecognizer(gestureRecognizer)
+            }
+            addGestureRecognizer()
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

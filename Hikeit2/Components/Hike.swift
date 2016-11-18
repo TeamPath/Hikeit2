@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 // Inserted by Andrew. 
 
@@ -15,29 +16,65 @@ import UIKit
 
 
 class Hike: NSObject, NSCoding {
-    
-//    var title = ""
+    var hikeName = ""
+    var hikeDiscription = ""
+    var date = Date()
+    var image: UIImage?
+    var category = 0
+    var hikeDuration = Date()
+    var hikeDistance = 00.00
    
     
-//    let titleKey = "title"
-   
     
+    
+    let hikeNameKey = "hikeName"
+    let hikeDiscriptionKey = "hikeDiscription"
+    let dateKey = "date"
+    let imageKey = "image"
+    let categoryKey = "category"
+    let hikeDurationKey = "duration"
+    let hikeDistanceKey = "distance"
+    
+    var dateString: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
+        return dateFormatter.string(from: date)
+    }
     
     override init() {
         super.init()
     }
-    
-    init(title: String, text: String, dueDate: String) {
-//        self.title = title
+    init(hikeName: String, hikeDiscription: String, date: Date, image: UIImage, category: Int, hikeDuration: Date, hikeDistance: Double) {
+        self.hikeName = hikeName
+        self.hikeDiscription = hikeDiscription
+        self.date = date
+        self.image = image
+        self.category = category
+        self.hikeDuration = hikeDuration
+        self.hikeDistance = hikeDistance
         
     }
+    
     required init?(coder aDecoder: NSCoder) {
-//        self.title = aDecoder.decodeObject(forKey: titleKey) as! String
-        
-    }
-    func encode(with aCoder: NSCoder) {
-//        aCoder.encode(title, forKey:titleKey)
+        self.hikeName = aDecoder.decodeObject(forKey: hikeNameKey) as! String
+        self.hikeDiscription = aDecoder.decodeObject(forKey: hikeDiscriptionKey) as! String
+        self.date = aDecoder.decodeObject(forKey: dateKey) as! Date
+        self.image = aDecoder.decodeObject(forKey: imageKey) as? UIImage
+        self.category = aDecoder.decodeInteger(forKey: categoryKey)
+        self.hikeDuration = aDecoder.decodeObject(forKey: hikeDurationKey) as! Date
+        self.hikeDistance = aDecoder.decodeObject(forKey: hikeDistanceKey) as! Double
         
     }
     
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(hikeName, forKey: hikeNameKey)
+        aCoder.encode(hikeDiscription, forKey: hikeDiscriptionKey)
+        aCoder.encode(date, forKey: dateKey)
+        aCoder.encode(image, forKey: imageKey)
+        aCoder.encode(category, forKey: categoryKey)
+        aCoder.encode(hikeDuration, forKey: hikeDurationKey)
+        aCoder.encode(hikeDistance, forKey: hikeDistanceKey)
+        
+    }
+
 }

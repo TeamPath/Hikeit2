@@ -25,7 +25,7 @@ class HikeStore {
             
         } else {
             hikes = [[], [], [], []]
-            hikes[0].append (Hike(title: "", text: "", dueDate: ""))
+            hikes[0].append (Hike(hikeName: "Cave Run Lake Trail", hikeDiscription: "Trail around the lake", date: Date(), image: #imageLiteral(resourceName: "Image"), category: 2, hikeDuration: Date(), hikeDistance: 2.5))
             
             save()
         }
