@@ -11,12 +11,14 @@ import CoreLocation
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "Artboard 1.png")
         self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view.
+
     }
   
     

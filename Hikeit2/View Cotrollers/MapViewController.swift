@@ -51,6 +51,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.showsUserLocation = true
         mapView.mapType = MKMapType.hybrid
         mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
+        
     }
     
     override func didReceiveMemoryWarning() {

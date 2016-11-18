@@ -18,7 +18,6 @@
 		0A4F66101DDCF087003DC5B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F660F1DDCF087003DC5B7 /* MainViewController.swift */; };
 		0A4F66121DDCF13A003DC5B7 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66111DDCF13A003DC5B7 /* WeatherViewController.swift */; };
 		0A4F66141DDCF157003DC5B7 /* HikeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66131DDCF157003DC5B7 /* HikeDetailViewController.swift */; };
-		0A4F66161DDCF17A003DC5B7 /* HikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66151DDCF17A003DC5B7 /* HikeTableViewController.swift */; };
 		0A4F66191DDCF1B0003DC5B7 /* HikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66181DDCF1B0003DC5B7 /* HikeTableViewCell.swift */; };
 		0A4F661B1DDCF323003DC5B7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4F661A1DDCF323003DC5B7 /* MapKit.framework */; };
 		0A4F661F1DDCF3D4003DC5B7 /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4F661E1DDCF3D4003DC5B7 /* Artboard 1.png */; };
@@ -27,6 +26,7 @@
 		0A4F66251DDD074B003DC5B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66241DDD074B003DC5B7 /* Constants.swift */; };
 		0A8FE4C61DDE088A00671286 /* Green General Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8FE4C51DDE088A00671286 /* Green General Background.png */; };
 		35AEFBB91DDDF69D00DE67EF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AEFBB81DDDF69D00DE67EF /* MapViewController.swift */; };
+		5A0518401DDF916400AD36EA /* HikesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05183F1DDF916400AD36EA /* HikesTableViewController.swift */; };
 		D64778B104370CC6247EDEF1 /* Pods_Hikeit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB660A22BCD19A66F6B005A /* Pods_Hikeit2.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,6 @@
 		0A4F660F1DDCF087003DC5B7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "View Cotrollers/MainViewController.swift"; sourceTree = "<group>"; };
 		0A4F66111DDCF13A003DC5B7 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = "View Cotrollers/WeatherViewController.swift"; sourceTree = "<group>"; };
 		0A4F66131DDCF157003DC5B7 /* HikeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeDetailViewController.swift; path = "View Cotrollers/HikeDetailViewController.swift"; sourceTree = "<group>"; };
-		0A4F66151DDCF17A003DC5B7 /* HikeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeTableViewController.swift; path = "View Cotrollers/HikeTableViewController.swift"; sourceTree = "<group>"; };
 		0A4F66181DDCF1B0003DC5B7 /* HikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeTableViewCell.swift; path = Cells/HikeTableViewCell.swift; sourceTree = "<group>"; };
 		0A4F661A1DDCF323003DC5B7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A4F661C1DDCF325003DC5B7 /* Hikeit2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hikeit2.entitlements; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		0BB660A22BCD19A66F6B005A /* Pods_Hikeit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hikeit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		305182AF4BB3EBC45A2272FE /* Pods-Hikeit2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikeit2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hikeit2/Pods-Hikeit2.debug.xcconfig"; sourceTree = "<group>"; };
 		35AEFBB81DDDF69D00DE67EF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Cotrollers/MapViewController.swift"; sourceTree = "<group>"; };
+		5A05183F1DDF916400AD36EA /* HikesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikesTableViewController.swift; path = "View Cotrollers/HikesTableViewController.swift"; sourceTree = "<group>"; };
 		6FF51C7D076583BE25CB2635 /* Pods-Hikeit2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hikeit2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hikeit2/Pods-Hikeit2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,8 +132,8 @@
 				0A4F660F1DDCF087003DC5B7 /* MainViewController.swift */,
 				0A4F66111DDCF13A003DC5B7 /* WeatherViewController.swift */,
 				0A4F66131DDCF157003DC5B7 /* HikeDetailViewController.swift */,
-				0A4F66151DDCF17A003DC5B7 /* HikeTableViewController.swift */,
 				35AEFBB81DDDF69D00DE67EF /* MapViewController.swift */,
+				5A05183F1DDF916400AD36EA /* HikesTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -322,7 +322,7 @@
 			files = (
 				0A4F66101DDCF087003DC5B7 /* MainViewController.swift in Sources */,
 				0A4F66081DDCED92003DC5B7 /* NetworkModel.swift in Sources */,
-				0A4F66161DDCF17A003DC5B7 /* HikeTableViewController.swift in Sources */,
+				5A0518401DDF916400AD36EA /* HikesTableViewController.swift in Sources */,
 				0A4F66191DDCF1B0003DC5B7 /* HikeTableViewCell.swift in Sources */,
 				0A4F66231DDD050B003DC5B7 /* HikesStore.swift in Sources */,
 				0A4F65F41DDCE9A2003DC5B7 /* ViewController.swift in Sources */,

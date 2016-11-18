@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreLocation
 
 class HikeStore {
     
@@ -25,9 +26,9 @@ class HikeStore {
             
         } else {
             hikes = [[], [], [], []]
-            hikes[0].append (Hike(hikeName: "Cave Run Lake Trail", hikeDiscription: "Trail around the lake", date: Date(), image: #imageLiteral(resourceName: "Image"), category: 2, hikeDuration: Date(), hikeDistance: 2.5))
-            
-            save()
+            hikes[0].append (Hike(hikeName: "Cave Run Lake", hikeDiscription: "Beautiful trail around the lake", date: Date(), image: #imageLiteral(resourceName: "Image"), category: 1, hikeDuration: Date(), hikeDistance: 2.3, currentLat:00.00,  currentLong:00.00 , image64: "pasdfadsjfpajdfpiapdfaif")
+                )
+                save()
         }
         
     }
