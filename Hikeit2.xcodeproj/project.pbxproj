@@ -16,7 +16,6 @@
 		0A4F66081DDCED92003DC5B7 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66071DDCED92003DC5B7 /* NetworkModel.swift */; };
 		0A4F660A1DDCEDF5003DC5B7 /* WebServicesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66091DDCEDF5003DC5B7 /* WebServicesExtension.swift */; };
 		0A4F66101DDCF087003DC5B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F660F1DDCF087003DC5B7 /* MainViewController.swift */; };
-		0A4F66121DDCF13A003DC5B7 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66111DDCF13A003DC5B7 /* WeatherViewController.swift */; };
 		0A4F66141DDCF157003DC5B7 /* HikeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66131DDCF157003DC5B7 /* HikeDetailViewController.swift */; };
 		0A4F66161DDCF17A003DC5B7 /* HikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66151DDCF17A003DC5B7 /* HikeTableViewController.swift */; };
 		0A4F66191DDCF1B0003DC5B7 /* HikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F66181DDCF1B0003DC5B7 /* HikeTableViewCell.swift */; };
@@ -43,7 +42,6 @@
 		0A4F66071DDCED92003DC5B7 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkModel.swift; path = Networking/NetworkModel.swift; sourceTree = "<group>"; };
 		0A4F66091DDCEDF5003DC5B7 /* WebServicesExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebServicesExtension.swift; path = Networking/WebServicesExtension.swift; sourceTree = "<group>"; };
 		0A4F660F1DDCF087003DC5B7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "View Cotrollers/MainViewController.swift"; sourceTree = "<group>"; };
-		0A4F66111DDCF13A003DC5B7 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherViewController.swift; path = "View Cotrollers/WeatherViewController.swift"; sourceTree = "<group>"; };
 		0A4F66131DDCF157003DC5B7 /* HikeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeDetailViewController.swift; path = "View Cotrollers/HikeDetailViewController.swift"; sourceTree = "<group>"; };
 		0A4F66151DDCF17A003DC5B7 /* HikeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeTableViewController.swift; path = "View Cotrollers/HikeTableViewController.swift"; sourceTree = "<group>"; };
 		0A4F66181DDCF1B0003DC5B7 /* HikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HikeTableViewCell.swift; path = Cells/HikeTableViewCell.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			children = (
 				0A4F65F31DDCE9A2003DC5B7 /* ViewController.swift */,
 				0A4F660F1DDCF087003DC5B7 /* MainViewController.swift */,
-				0A4F66111DDCF13A003DC5B7 /* WeatherViewController.swift */,
 				0A4F66131DDCF157003DC5B7 /* HikeDetailViewController.swift */,
 				0A4F66151DDCF17A003DC5B7 /* HikeTableViewController.swift */,
 				35AEFBB81DDDF69D00DE67EF /* MapViewController.swift */,
@@ -330,7 +327,6 @@
 				0A4F66251DDD074B003DC5B7 /* Constants.swift in Sources */,
 				0A4F66211DDD02AD003DC5B7 /* Hike.swift in Sources */,
 				0A4F660A1DDCEDF5003DC5B7 /* WebServicesExtension.swift in Sources */,
-				0A4F66121DDCF13A003DC5B7 /* WeatherViewController.swift in Sources */,
 				0A4F66061DDCED66003DC5B7 /* WebServices.swift in Sources */,
 				0A4F66141DDCF157003DC5B7 /* HikeDetailViewController.swift in Sources */,
 				35AEFBB91DDDF69D00DE67EF /* MapViewController.swift in Sources */,
